@@ -13,7 +13,7 @@ const express = require('express'),
 });
 
 const studentsRouter = require('./routes/students');
-app.use('/students', studentsRouter);
+app.use('/', studentsRouter);
 
 app.use(bodyParser.json());
 
