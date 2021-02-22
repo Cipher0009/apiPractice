@@ -2,7 +2,7 @@ const express = require('express'),
   router = express.Router();
   
 router.get('/',function(req, res){
-    res.status(404).sendFile(__dirname+'/index.html');
+    res.sendFile(__dirname+'/index.html');
  });
 // get user lists
 router.get('/list', function(req, res) {
